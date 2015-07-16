@@ -20,4 +20,16 @@ public class BlackJackApp {
 
 	}
 
+	
+	public void initaliseDeck() {
+		
+	}
+	
+	public void shuffleDeck() {
+		
+	}
+	
+	public void drawCard(Card.Owner owner) {
+		
+	}
 }

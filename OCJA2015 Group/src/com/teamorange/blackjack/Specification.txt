@@ -13,3 +13,52 @@ Note: There may be changes to requirements.
 
 Pseudocode
 
+DECLARE int numGames = 0
+DECLARE int player1Wins = 0
+DECLARE int player2Wins = 0
+DECLARE array deck of Card objects
+
+WHILE numGames < 11
+
+	initialise deck array
+	shuffle deck array
+	select dealer
+	select player
+
+	deal one card to player
+	
+	WHILE TRUE
+	
+		deal one card to player
+		get total of player's cards
+		if playerTotal > 21 then
+			player loses
+			break
+		else if playerTotal == 21 
+			player win
+			break
+		else if playerTotal > 16 then
+			break
+		end if
+		
+	END WHILE
+			
+	if player score < 21 deal one card to dealer
+			
+	WHILE TRUE
+	
+		deal one card to dealer
+		
+		get total of dealer's card
+		if playerTotal > 21 then
+			dealer loses
+			break
+		else if dealerTotal > playerTotal
+			win
+			break
+		end if
+	End While
+		
+END WHILE
+
+display scores

@@ -13,10 +13,10 @@ package com.teamorange.blackjack;
 public class Card {
 
 	enum Suit { DIAMONDS, HEARTS, CLUBS, SPADES }
-	enum Owner { DECK, PLAYER1, PLAYER2 }
+	enum Owner { DECK, DEALER, PLAYER}
 	int faceValue;		// 1 -13
 	
-	public int getScore() {
+	public int getPlayerScore() {
 		
 		if (this.faceValue > 10) {
 			return 10;
@@ -26,4 +26,6 @@ public class Card {
 			return this.faceValue;
 		}
 	}
+	
+	
 }
