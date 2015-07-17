@@ -14,18 +14,45 @@ public class Card {
 
 	enum Suit { DIAMONDS, HEARTS, CLUBS, SPADES }
 	enum Owner { DECK, DEALER, PLAYER}
-	int faceValue;		// 1 -13
+	int rank;		// 1 -13
+	String[] rankNames = { 
+		"", "Ace", "Two", "Three", "Four", 
+		"Five", "Six", "Seven", "Eight", 
+		"Nine", "Ten", "Jack", "Queen", "King"
+	};
+	Suit suit;
+	Owner owner;
+
+	public Card(Suit suit, int value) {
+		this.rank= value;
+		this.suit = suit;
+		this.owner = Owner.DECK;		
+	}
+
+	public void showCard() {
+		System.out.println(getRankName(rank) + " of " + suit.name());
+	}
 	
-	public int getPlayerScore() {
+	public String getRankName(int r) {
+		return rankNames[r];
+	}
+	
+	public int getCardScore() {
 		
-		if (this.faceValue > 10) {
+		if (this.rank > 10) {
 			return 10;
-		} else if (this.faceValue == 1){
+		} else if (this.rank == 1){
 			return 11;
 		} else {
-			return this.faceValue;
+			return this.rank;
 		}
 	}
 	
-	
+	public void setOwner(Owner owner) {
+		if (this.owner == Owner.DECK) this.owner = owner;
+	}
+
+	public Owner getOwner() {
+		return this.owner;
+	}
 }
