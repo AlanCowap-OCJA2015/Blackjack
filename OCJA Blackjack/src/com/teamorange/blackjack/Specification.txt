@@ -1,0 +1,64 @@
+You are required to write a Prototype command line program to play the card game Black Jack. The game will consist of 2 virtual players who will play 11 games against one another, the winner being the one who wins the most games.
+
+Call your program: BlackJackApp
+You will need to use, the Random class, enums, arrays, for loops, if statements.
+
+After each game, the app should pause and prompt the user to hit the return key to continue with the next game
+
+The program should be robust and recover from all reasonable exceptions and errors.
+
+Note: There may be changes to requirements.
+
+3:15pm - demo time
+
+Pseudocode
+
+DECLARE int numGames = 0
+DECLARE int player1Wins = 0
+DECLARE int player2Wins = 0
+DECLARE array deck of Card objects
+
+WHILE numGames < 11
+
+	initialise deck array
+	shuffle deck array
+	select dealer
+	select player
+
+	deal one card to player
+	
+	WHILE TRUE
+	
+		deal one card to player
+		get total of player's cards
+		if playerTotal > 21 then
+			player loses
+			break
+		else if playerTotal == 21 
+			player win
+			break
+		else if playerTotal > 16 then
+			break
+		end if
+		
+	END WHILE
+			
+	if player score < 21 deal one card to dealer
+			
+	WHILE TRUE
+	
+		deal one card to dealer
+		
+		get total of dealer's card
+		if playerTotal > 21 then
+			dealer loses
+			break
+		else if dealerTotal > playerTotal
+			win
+			break
+		end if
+	End While
+		
+END WHILE
+
+display scores
