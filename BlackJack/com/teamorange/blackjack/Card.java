@@ -1,14 +1,10 @@
-/**
- * Created 16 Jul 2015
- * @author Kevin Phair
- * 
- */
 package com.teamorange.blackjack;
 
 /**
  * 
  * @author Mubasher Mohammed, Kevin Phair, Jenn Quinn, Seamus O'Toole
  * @version 1.0
+ * Created 16 Jul 2015
  */
 public class Card {
 
