@@ -69,7 +69,6 @@ public class Player {
 
 	}
 
-
 	public void resetStick(){
 		sticking = false;
 	}
@@ -106,19 +105,19 @@ public class Player {
 		
 	}
 
-
-
 	public void addToHand(String card){
 		hand += card + " ";
 	}
 
-
 	public int aceChoice(){
+		
+		
 
-		if(handValue <= 10){
+		if(handValue > 10){
+			return 1;
+		}else{
 			return 11;
 		}
-		return 1;
 	}
 
 

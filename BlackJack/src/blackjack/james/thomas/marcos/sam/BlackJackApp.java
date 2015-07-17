@@ -29,15 +29,16 @@ public class BlackJackApp {
 		p2.setOpponent(p1);
 		
 		System.out.println("Welcome to BlackJack Simulation 2015");
+		System.out.println(("By Thomas, James, Marcos and Sam!"));
 		System.out.println("Press Enter to start.");
 		
 		
-		try{
-			System.in.read();
-			System.in.skip(1000);
-		}catch(Exception e){
-			e.printStackTrace();
-		}
+//		try{
+//			System.in.read();
+//			System.in.skip(1000);
+//		}catch(Exception e){
+//			e.printStackTrace();
+//		}
 
 		//Game loop for 11 rounds.
 		for(int game = 0; game < 11; game++){
@@ -119,12 +120,12 @@ public class BlackJackApp {
 			
 			//Prompt the user to press enter and wait for it. Skip any additional key presses.
 			System.out.println("\nPress Enter to continue");
-			try{
-				System.in.read();
-				System.in.skip(1000);
-			}catch(Exception e){
-				e.printStackTrace();
-			}
+//			try{
+//				System.in.read();
+//				System.in.skip(1000);
+//			}catch(Exception e){
+//				e.printStackTrace();
+//			}
 			
 
 		}
