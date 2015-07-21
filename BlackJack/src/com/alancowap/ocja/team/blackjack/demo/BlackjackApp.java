@@ -14,7 +14,7 @@ public class BlackjackApp {
 
 	public static void main(String[] args) {
 		System.out.println("Hello github, everybody push to your branches :)");
-
+		
 	}
 
 }
